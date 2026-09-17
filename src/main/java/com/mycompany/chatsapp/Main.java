@@ -24,7 +24,7 @@ public class Main {
        System.out.println("Enter password (min 8 characters, a capital letter, a number, and a special character): ");
        String password = scanner.nextLine();
         
-       System.out.println("Enter South African cell phone number (e.g. +27 8389098390): ");
+       System.out.println("Enter South African cell phone number (e.g. +27 838098390): ");
        String cellPhoneNumber = scanner.nextLine();
         
        String registrationMessage = login.registerUser(userName, password, cellPhoneNumber, firstName, lastName);
