@@ -89,7 +89,7 @@ public class LoginTest {
     public void testLoginUser_Failed() {
         Login login = new Login();
         login.registerUser("mml_1", "Manko@na!10", "+27838968976", "Mankoana", "Letsoalo");
-        assertFalse(login.loginUser("kyl_1", "WrongPassword1!"));
+        assertFalse(login.loginUser("mml_1", "WrongPassword1!"));
     }
 
     // returnLoginStatus tests
@@ -97,7 +97,7 @@ public class LoginTest {
     public void testReturnLoginStatus_SuccessMessage() {
         Login login = new Login();
         login.registerUser("mml_1", "Manko@na!10", "+27838968976", "Mankoana", "Letsoalo");
-        login.loginUser("mml_1", "Ch&&sec@ke99!");
+        login.loginUser("mml_1", "Manko@na!10");
         assertEquals("Welcome Mankoana,Letsoalo it is great to see you.", login.returnLoginStatus());
     }
 
