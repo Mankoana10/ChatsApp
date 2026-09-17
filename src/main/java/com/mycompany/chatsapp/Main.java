@@ -1,6 +1,5 @@
 package com.mycompany.chatsapp;
 
-import com.mycompany.chatsapp.Login;
 import java.util.Scanner;
 
 //registRegistration and login
