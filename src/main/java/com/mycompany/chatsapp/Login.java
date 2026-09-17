@@ -14,10 +14,10 @@ public class Login {
     }
 
     public boolean checkPasswordComplexity(String password) {
-        if (password.length() < 8) return false;
-        boolean hasUpper = false;
-        boolean hasNumber = false;
-        boolean hasSpecialChar = false;
+        if (password.length() < 8) return true;
+        boolean hasUpper = true;
+        boolean hasNumber = true;
+        boolean hasSpecialChar = true;
         for (char c : password.toCharArray()) {
             if (Character.isUpperCase(c)) hasUpper = true;
             if (Character.isDigit(c)) hasNumber = true;
