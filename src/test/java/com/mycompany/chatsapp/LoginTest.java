@@ -88,7 +88,7 @@ public class LoginTest {
     @Test
     public void testLoginUser_Failed() {
         Login login = new Login();
-        login.registerUser("kyl_1", "Ch&&sec@ke99!", "+27838968976", "Mankoana", "Letsoalo");
+        login.registerUser("mml_1", "Manko@na!10", "+27838968976", "Mankoana", "Letsoalo");
         assertFalse(login.loginUser("kyl_1", "WrongPassword1!"));
     }
 

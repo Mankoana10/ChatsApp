@@ -3,7 +3,6 @@ package com.mycompany.chatsapp;
 import java.util.regex.Pattern;
 
 // Login class - handles registration and login for the chat app
-// Part 1 of the POE
 public class Login {
 
     private String userName;
@@ -17,8 +16,7 @@ public class Login {
         isLoggedIn = false;
     }
 
-    // username needs an underscore and can't be longer than 5 chars
-    // e.g. kyl_1 is fine
+    // username needs an underscore and can't be longer than 5 chars 
     public boolean checkUserName(String userName) {
         if (userName == null) {
             return false;
