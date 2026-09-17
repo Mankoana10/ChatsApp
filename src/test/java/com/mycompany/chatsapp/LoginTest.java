@@ -45,7 +45,7 @@ public class LoginTest {
     @Test 
     public void testCheckCellPhoneNumber_IncorrectlyFormatted() {
         Login login = new Login();
-        assertFalse(login.checkCellPhonenumber("08098390"));
+        assertFalse(login.checkCellPhoneNumber("08098390"));
     }
     
     //registerUser tests
