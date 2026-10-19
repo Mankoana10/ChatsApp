@@ -176,7 +176,7 @@ public class Message {
     }
  
     public String getMessageHash() {
-        return message;
+        return messageHash;
         }
  
     public int getThisMessageNumber() {
