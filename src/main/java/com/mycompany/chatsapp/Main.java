@@ -46,5 +46,44 @@ public class Main {
         }
 
         scanner.close();
+    
+        //After login is successful
+    
+       System.out.println("How many messages do you want to send?");
+       int numMessages = interger.parseInt(input.nextLine());
+       
+       for (int i = 0; i< numMessages; i++) {
+           System.out.println("Enter recipient (+27...)");
+           String recipient = input.nextLine();
+           
+           System.out.println("Enter message (max 250 chars)");
+           String text = input.nextLine();
+           
+           //This is the connection
+           message newMessage = new Message(recipient, text);
+           
+           //Use Message methods
+           System.out.println(newMessage.checkMessageLength());
+           if (!newMessage.checkRecipientCell()) {
+               i--; //ask again
+               continue;
+           }
+           
+           System.out.println(newMessage.checkMessageLength());
+           if (newMessage.getMessageText().length() > 250) {
+               i--; 
+               continue;
+           }
+           
+           System.out.println(newMessage.createMessageHash());
+           
+           String option = JOptionPane. showInputDialog("1) send\n2) Disregard\n3) store");
+           if (option.equals("1")) {
+               newMessage.storeMessage();
+               System.out,println(newMessage.printMessage());
+           }
+       }
+       System.out.println("Total sent:  " + Message.returnTotalMessages());
+    
     }
 }
