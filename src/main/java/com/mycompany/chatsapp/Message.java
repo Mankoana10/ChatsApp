@@ -129,7 +129,7 @@ public class Message {
     }
 
     // returns everything that's been sent so far, one message per line
-    public String printMessages() {
+    public static String printMessages() {
         StringBuilder sb = new StringBuilder();
         for (String msg : sentMessages) {
             sb.append(msg).append(System.lineSeparator());
