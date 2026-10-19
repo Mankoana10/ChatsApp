@@ -25,6 +25,7 @@ public class Message {
         this.recipient = recipient;
         this.messageText = messageText;
         this.thisMessageNumber = messageCounter;
+        this.messageHash = createMessageHash();
         messageCounter++;
     }
 
@@ -34,6 +35,7 @@ public class Message {
         this.messageId = messageId;
         this.recipient = recipient;
         this.messageText = messageText;
+        this.messageHash = messageHash;
         this.thisMessageNumber = messageNumber;
     }
 
@@ -41,15 +43,8 @@ public class Message {
         // just a random 10 digit number for tracking the message
         SecureRandom random = new SecureRandom();
         StringBuilder id = new StringBuilder();
-        for (int i = 0; i < 10; i++) {
-            id.append(random.nextInt(10));
-        }
-        return id.toString();
-    }
-
-    // message ID can't be more than ten characters
-    public boolean checkMessageID() {
-        return messageId != null && messageId.length() <= 10;
+        for (int i = 0; i < 10; i++) sb.append(r.nextInt(10));
+        return sb.toString();
     }
 
     // same rule as the login cell number check - needs a country code and no more than ten characters
