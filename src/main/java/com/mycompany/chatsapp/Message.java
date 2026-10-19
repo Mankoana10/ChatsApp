@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 
-// Message class for Part 2 - handles sending, storing and printing messages
+// Message class- handles sending, storing and printing messages
 public class Message {
 
     // these are shared across every Message object, since we need running totals
