@@ -56,9 +56,9 @@ public class Main {
             return;
         }
  
-        // ---------- Part 2: QuickChat ----------
+        // ---------- Part 2: Chatapp ----------
         System.out.println();
-        System.out.println("Welcome to QuickChat.");
+        System.out.println("Welcome to Chatapp.");
  
         int numberOfMessages = readNumber(scanner, "How many messages do you want to enter? ");
         int messagesEntered = 0;
