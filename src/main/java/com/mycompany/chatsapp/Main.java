@@ -57,9 +57,9 @@ public class Main {
             return;
         }
 
-        // ---------- Part 2 and 3: QuickChat ----------
+        // ---------- Part 2 and 3: Chatapp ----------
         System.out.println();
-        System.out.println("Welcome to QuickChat.");
+        System.out.println("Welcome to Chatapp.");
 
         // the logged in user is the sender, and any messages stored in the JSON file get loaded back in
         Message.setSender(login.getCellPhoneNumber());
