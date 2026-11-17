@@ -1,6 +1,7 @@
 package com.mycompany.chatsapp;
 
 import java.util.Scanner;
+
  
 // Console app that ties Login (Part 1) and Message (Part 2) together
 public class Main {
