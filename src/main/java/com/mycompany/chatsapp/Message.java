@@ -60,9 +60,9 @@ public class Message {
         return id.toString();
     }
 
-    // ---------------------------------------------------------------
+    
     // Part 2
-    // ---------------------------------------------------------------
+    
 
     // message ID can't be more than ten characters
     public boolean checkMessageID() {
@@ -175,9 +175,9 @@ public class Message {
         return totalMessagesSent;
     }
 
-    // ---------------------------------------------------------------
+    
     // JSON storage
-    // ---------------------------------------------------------------
+    
 
     // appends this message to the JSON file (one JSON object per line)
     public String storeMessage() {
